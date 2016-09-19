@@ -2,7 +2,7 @@
       
         function userAgent() {
           var alert = document.getElementById('alerts');
-          alert.innerText = navigator.userAgent + " Match: "+ navigator.userAgent.match("Chrome");
+      //     alert.innerText = navigator.userAgent + " Match: "+ navigator.userAgent.match("Chrome");
           if (navigator.userAgent.match("Firefox")) {
           alert.innerHTML = '<div class="alert alert-warning"><strong>Warning!</strong> Use Chrome or Internet Explorer when running large files.     </div>';
           }
