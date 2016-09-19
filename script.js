@@ -1,12 +1,13 @@
       window.onload = function() {
       
-      function userAgent() {
-        var alert = document.getElementById('alert');
-        if (navigator.userAgent.match("Firefox")) {
-         alert.innerHTML = '<div class="alert alert-warning"><strong>Warning!</strong> Use Chrome or Internet Explorer when running large files.     </div>';
-         }
-      }
-        userAgent();      
+        function userAgent() {
+          var alert = document.getElementById('alert');
+          alert.innerText = navigator.userAgent + " Match: "+ navigator.userAgent.match("Chrome");
+          if (navigator.userAgent.match("Firefox")) {
+          alert.innerHTML = '<div class="alert alert-warning"><strong>Warning!</strong> Use Chrome or Internet Explorer when running large files.     </div>';
+          }
+        }
+        userAgent();    
             
             
         //get references to important elements in the html input and pre
